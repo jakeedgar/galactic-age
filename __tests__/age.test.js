@@ -13,8 +13,13 @@ describe('Age', () => {
     expect(reusableUser.age).toEqual(25);
   });
 
-  test("should return a modified age based on planet and user age", () => {
+  test("should return the age of user on mercury based on user age input", () => {
     reusableUser.mercuryAge("mercury");
     expect(reusableUser.age).toEqual(104);
+  });
+
+  test("should return the age of user on venus based on user age input", () => {
+    reusableUser.mercuryAge("venus");
+    expect(reusableUser.age).toEqual(40);
   });
 });
