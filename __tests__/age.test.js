@@ -4,10 +4,12 @@ import Age from "../src/js/age";
 describe('Age', () => {
   let reusableUser;
   let otherUser;
+  let noPlanetUser;
 
   beforeEach(() => {
     reusableUser = new Age("Sam", 25, 75);
     otherUser = new Age("Nathan", 100, 75);
+    noPlanetUser = new Age("baby", 0, 0)
   });
 
   test('should return the name and age of the user based on input', () => {
@@ -70,5 +72,9 @@ describe('Age', () => {
     expect(otherUser.age).toEqual(8);
     expect(otherUser.lifeExp).toEqual(6);
     expect(otherUser.lifePassed).toEqual(2)
+  });
+
+  test("should return an alert for a user who does not input a planet", () => {
+    noPlanetUser.planetAge("");
   });
 });
