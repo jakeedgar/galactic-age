@@ -10,30 +10,33 @@ export default class Age {
   }
   planetAge(planet) {
       if (planet === "mercury") {
-          if (this.age > this.lifeExp) {
-            this.age = (Math.floor((this.age/.24)));
-            this.lifeExp = (Math.floor((this.lifeExp/.24)));
-            this.lifePassed = (this.age - this.lifeExp);
-          } else {
-            this.age = (Math.floor((this.age/.24)));
-            this.lifeExp = (Math.floor((this.lifeExp/.24)));
-            this.lifeLeft += (this.lifeExp - this.age);
-          }
+        if (this.age > this.lifeExp) {
+          this.age = (Math.floor((this.age/.24)));
+          this.lifeExp = (Math.floor((this.lifeExp/.24)));
+          this.lifePassed = (this.age - this.lifeExp);
+        } else {
+          this.age = (Math.floor((this.age/.24)));
+          this.lifeExp = (Math.floor((this.lifeExp/.24)));
+          this.lifeLeft += (this.lifeExp - this.age);
+        }
     } else if (planet === "venus") {
-      this.age = (Math.floor((this.age/.61)));
-      this.lifeExp = (Math.floor((this.lifeExp/.61)));
-      this.lifeLeft += (this.lifeExp - this.age);
-      this.planet = "venus"
+        if (this.age > this.lifeExp) {
+          this.age = (Math.floor((this.age/.61)));
+          this.lifeExp = (Math.floor((this.lifeExp/.61)));
+          this.lifePassed = (this.age - this.lifeExp);
+        } else {
+          this.age = (Math.floor((this.age/.61)));
+          this.lifeExp = (Math.floor((this.lifeExp/.61)));
+          this.lifeLeft += (this.lifeExp - this.age);
+        }
     } else if (planet === "mars") {
       this.age = (Math.floor((this.age/1.88)));
       this.lifeExp = (Math.floor((this.lifeExp/1.88)));
       this.lifeLeft += (this.lifeExp - this.age);
-      this.planet = "mars"
     } else if (planet === "jupiter") {
       this.age = (Math.floor((this.age/11.86)));
       this.lifeExp = (Math.floor((this.lifeExp/11.86)));
       this.lifeLeft += (this.lifeExp - this.age);
-      this.planet = "jupiter"
     } else {
       return this.age;
     }
