@@ -6,7 +6,8 @@
 <body>
   <div class="container">
     <form id="calc">
-      <h1>Explore the life cycles of other planets!</h1>
+      <h1>What the heck is your age on other planets!?</h1>
+      <p>Great question!</p>
         <div class="form group">
           <input id="name-input" class="form-control" type="text" placeholder="Enter your name:" required>
         </div>
@@ -20,15 +21,27 @@
           <input type="radio" name="planet" value="mercury" checked>
           <label for="planet">Mercury</label>
         </div>
-        <button type="submit" class="btn-dark">Submit!</button>
-    </form>
+        <div class="radio">
+          <input type="radio" name="planet" value="venus">
+          <label for="planet">Venus</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="planet" value="mars">
+          <label for="planet">Mars</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="planet" value="jupiter">
+          <label for="planet">Jupiter</label>
+        </div>
+        <button type="submit" class="btn-dark">Find Out!</button>
     <div id="output">
-      <!-- <ul id="age-stats">
+      <ul id="age-stats">
         <li id="earth-age"></li>
         <li id="planet-age"></li>
-        <li id="planet-exp"></li> -->
+        <li id="planet-exp"></li>
       </ul>
     </div>
+  </form>
   </div>
 
 </body>
