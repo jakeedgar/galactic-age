@@ -3,9 +3,11 @@ import Age from "../src/js/age";
 
 describe('Age', () => {
   let reusableUser;
+  let otherUser;
 
   beforeEach(() => {
     reusableUser = new Age("Sam", 25, 75);
+    otherUser = new Age("Nathan", 100, 75);
   });
 
   test('should return the name and age of the user based on input', () => {
