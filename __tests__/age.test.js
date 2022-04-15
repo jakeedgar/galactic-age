@@ -14,28 +14,39 @@ describe('Age', () => {
     expect(reusableUser.lifeExp).toEqual(75);
   });
 
-  test("should return the age of user on mercury based on user age input", () => {
+  test("should return and modify the age of user on mercury based on user age input", () => {
     reusableUser.planetAge("mercury");
     expect(reusableUser.age).toEqual(104);
     expect(reusableUser.lifeExp).toEqual(312);
     expect(reusableUser.lifeLeft).toEqual(208);
   });
 
-  test("should return the age of user on venus based on user age input", () => {
+  test("should return and modify the age of user on venus based on user age input", () => {
     reusableUser.planetAge("venus");
     expect(reusableUser.age).toEqual(40);
     expect(reusableUser.lifeExp).toEqual(122);
+    expect(reusableUser.lifeLeft).toEqual(82);
   });
 
-  test("should return the age of user on mars based on user age input", () => {
+  test("should return and modify the age of user on mars based on user age input", () => {
     reusableUser.planetAge("mars");
     expect(reusableUser.age).toEqual(13);
     expect(reusableUser.lifeExp).toEqual(39);
+    expect(reusableUser.lifeLeft).toEqual(26);
   });
 
-  test("should return the age of user on jupiter based on user age input", () => {
+  test("should return and modify the age of user on jupiter based on user age input", () => {
     reusableUser.planetAge("jupiter");
     expect(reusableUser.age).toEqual(2);
     expect(reusableUser.lifeExp).toEqual(6);
+    expect(reusableUser.lifeLeft).toEqual(4);
   });
+
+  // test("should return the amount of years the user has lived passed their life expectancy", () => {
+  //   let otherUser = new Age("Josh", 100, 75)
+  //   otherUser.planetAge("jupiter");
+  //   expect(otherUser.age).toEqual(8);
+  //   expect(otherUser.lifeExp).toEqual(6);
+  //   expect(otherUser.lifePassed).toEqual(2)
+  // });
 });
