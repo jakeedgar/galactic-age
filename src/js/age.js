@@ -10,9 +10,15 @@ export default class Age {
   }
   planetAge(planet) {
       if (planet === "mercury") {
-      this.age = (Math.floor((this.age/.24)));
-      this.lifeExp = (Math.floor((this.lifeExp/.24)));
-      this.lifeLeft += (this.lifeExp - this.age);
+          if (this.age > this.lifeExp) {
+            this.age = (Math.floor((this.age/.24)));
+            this.lifeExp = (Math.floor((this.lifeExp/.24)));
+            this.lifePassed = (this.age - this.lifeExp);
+          } else {
+            this.age = (Math.floor((this.age/.24)));
+            this.lifeExp = (Math.floor((this.lifeExp/.24)));
+            this.lifeLeft += (this.lifeExp - this.age);
+          }
     } else if (planet === "venus") {
       this.age = (Math.floor((this.age/.61)));
       this.lifeExp = (Math.floor((this.lifeExp/.61)));
