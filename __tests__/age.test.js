@@ -57,4 +57,18 @@ describe('Age', () => {
     expect(otherUser.lifeExp).toEqual(122);
     expect(otherUser.lifePassed).toEqual(41)
   });
+
+  test("should return the amount of years the user has lived passed their life expectancy for mars", () => {
+    otherUser.planetAge("mars");
+    expect(otherUser.age).toEqual(53);
+    expect(otherUser.lifeExp).toEqual(39);
+    expect(otherUser.lifePassed).toEqual(14)
+  });
+
+  test("should return the amount of years the user has lived passed their life expectancy for jupiter", () => {
+    otherUser.planetAge("jupiter");
+    expect(otherUser.age).toEqual(8);
+    expect(otherUser.lifeExp).toEqual(6);
+    expect(otherUser.lifePassed).toEqual(2)
+  });
 });
