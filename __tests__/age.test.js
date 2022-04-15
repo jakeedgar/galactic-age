@@ -45,9 +45,9 @@ describe('Age', () => {
   });
 
   test("should return the amount of years the user has lived passed their life expectancy", () => {
-    otherUser.planetAge("jupiter");
-    expect(otherUser.age).toEqual(8);
-    expect(otherUser.lifeExp).toEqual(6);
-    // expect(otherUser.lifePassed).toEqual(2)
+    otherUser.planetAge("mercury");
+    expect(otherUser.age).toEqual(416);
+    expect(otherUser.lifeExp).toEqual(312);
+    expect(otherUser.lifePassed).toEqual(104)
   });
 });
