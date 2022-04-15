@@ -14,6 +14,7 @@ describe('Age', () => {
   });
 
   test("should return a modified age based on planet and user age", () => {
-    
+    reusableUser.mercuryAge("mercury");
+    expect(reusableUser.age).toEqual(104);
   });
 });

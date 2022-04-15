@@ -6,7 +6,12 @@ export default class Age {
   }
 
 
-  mercuryAge(age) {
-
+  mercuryAge(planet) {
+    if (planet === "mercury") {
+      this.age = (Math.floor((this.age/.24)));
+      this.planet = "mercury"
+    } else {
+      return this.age;
+    }
   }
 }
