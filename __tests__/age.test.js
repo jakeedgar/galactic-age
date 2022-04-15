@@ -1,3 +1,4 @@
+import { exportAllDeclaration } from "@babel/types";
 import Age from "../src/js/age";
 
 describe('Age', () => {
@@ -8,5 +9,6 @@ describe('Age', () => {
   });
 
   test('should return the age of the user based on input', () => {
+    expect(reusableAge.age).toEqual(25);
   });
 });
