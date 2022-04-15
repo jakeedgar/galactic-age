@@ -2,13 +2,14 @@ import { exportAllDeclaration } from "@babel/types";
 import Age from "../src/js/age";
 
 describe('Age', () => {
-  let reusableAge;
+  let reusableUser;
 
   beforeEach(() => {
-    reusableAge = new Age(25);
+    reusableUser = new Age("Sam", 25);
   });
 
-  test('should return the age of the user based on input', () => {
-    expect(reusableAge.age).toEqual(25);
+  test('should return the name and age of the user based on input', () => {
+    expect(reusableUser.name).toEqual("Sam");
+    expect(reusableUser.age).toEqual(25);
   });
 });
