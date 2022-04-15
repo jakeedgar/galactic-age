@@ -3,7 +3,9 @@ export default class Age {
     this.name = name;
     this.age = age;
     this.lifeExp = lifeExp;
+    this.lifeLeft = 0;
     this.planet = {};
+
   }
 
 
@@ -12,6 +14,7 @@ export default class Age {
       this.age = (Math.floor((this.age/.24)));
       this.lifeExp = (Math.floor((this.lifeExp/.24)));
       this.planet = "mercury"
+      this.lifeLeft += (this.lifeExp - this.age);
     } else if (planet === "venus") {
       this.age = (Math.floor((this.age/.61)));
       this.lifeExp = (Math.floor((this.lifeExp/.61)));
