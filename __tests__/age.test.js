@@ -44,11 +44,10 @@ describe('Age', () => {
     expect(reusableUser.lifeLeft).toEqual(4);
   });
 
-  // test("should return the amount of years the user has lived passed their life expectancy", () => {
-  //   let otherUser = new Age("Josh", 100, 75)
-  //   otherUser.planetAge("jupiter");
-  //   expect(otherUser.age).toEqual(8);
-  //   expect(otherUser.lifeExp).toEqual(6);
-  //   expect(otherUser.lifePassed).toEqual(2)
-  // });
+  test("should return the amount of years the user has lived passed their life expectancy", () => {
+    otherUser.planetAge("jupiter");
+    expect(otherUser.age).toEqual(8);
+    expect(otherUser.lifeExp).toEqual(6);
+    // expect(otherUser.lifePassed).toEqual(2)
+  });
 });
