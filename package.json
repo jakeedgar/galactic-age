@@ -2,18 +2,16 @@
   "name": "galactic-age",
   "version": "1.0.0",
   "description": "#### By _**{List of contributors}**_",
-  "main": "webpage.config.js",
+  "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build & webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
-  "jest": {
+"jest": {
     "collectCoverage": true,
-    "coverageReporters": [
-      "html"
-    ]
+    "coverageReporters": ["html"]
   },
   "keywords": [],
   "author": "",
