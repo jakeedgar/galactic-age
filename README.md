@@ -28,6 +28,7 @@ The user is prompted to enter their age and name which the business logic will t
 * Run *NPM install* to install dependencies. 
 * Run *NPM run build* to build the project environment. 
 * Run *NPM run start* to run the program in your browser. 
+* If you plan to update the project make sure you push the .gitignore file to github first by using *git add .gitignore* and then pushing it to your personal github. 
 
 
 ## Known Bugs
