@@ -1,37 +1,40 @@
-# _{Application Name}_
+# Galactic Age Calculator
 
-#### By _**{List of contributors}**_
+#### By Jake Edgar
 
-#### _{Brief description of application}_
+#### A website that returns the users age and name according to different planet's year length compared to earth. 
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* JavaScript
+* CSS
+* Jest
+* TDD
+* Bootstrap 
+* Node
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+The user is prompted to enter their age and name which the business logic will then translate according to each planet they select. For example their age on mercury will be about four times as old as they are on Earth due to the short distance of its orbit around the sun. 
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Navigate to your preferred code editing software. 
+* Clone this repository to your desktop by using the command *git clone* followed by this link https://github.com/jakeedgar/galactic-age
+* Navigate to the top level of the directory. 
+* Ensure NPM is install by running with the command *NPM -v* in your terminal, and if it is not use your preferred installer to install NPM. 
+* Run *NPM init -y* to initialize your project. 
+* Run *NPM install* to install dependencies. 
+* Run *NPM run build* to build the project environment. 
+* Run *NPM run start* to run the program in your browser. 
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* There are no Known Bugs at this time. 
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
-
-Copyright (c) _date_ _author name(s)_
+Licensed under the [MIT License](LICENSE).
+Copyright (c) 2022 Jake Edgar

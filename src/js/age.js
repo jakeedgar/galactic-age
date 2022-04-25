@@ -50,7 +50,7 @@ export default class Age {
           this.lifeLeft += (this.lifeExp - this.age);
         }
     } else {
-      return this.age = 0;
+      return "Please enter a planet";
     }
   }
 }
