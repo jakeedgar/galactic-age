@@ -74,7 +74,8 @@ describe('Age', () => {
     expect(otherUser.lifePassed).toEqual(2)
   });
 
-  test("should return an alert for a user who does not input a planet", () => {
-    noPlanetUser.planetAge("");
+  test("should return a string notifying the user to enter a planet if the user does not input a planet", () => {
+    let example = noPlanetUser.planetAge("");
+    expect(example).toEqual("Please enter a planet");
   });
 });
